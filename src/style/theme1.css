@@ -1,0 +1,78 @@
+body {
+  background-color: #3A4663;
+}
+
+/*header**************************************/
+.logo {
+  color: #FFF;
+}
+
+.theme h3 {
+  color: #FFF;
+}
+
+.theme-nmbrs p {
+  color: #FFF;
+}
+
+.switch-btn {
+  background-color: #242D44;
+}
+
+#switch-btn {
+  background-color: #D03F2F;
+}
+
+/*result screen*/
+
+.result-screen {
+  background-color: #181F33;
+}
+
+.result {
+  color: #FFF;
+}
+
+/*button*/
+.buttons {
+  background-color: #242D44;
+}
+.button1 {
+  background-color: #EAE3DC;
+  box-shadow: 0px -4px 0px 0px #B3A497 inset;
+  color: #434A59;
+}
+
+.button1:hover {
+  background-color: #FFFFFE;
+}
+
+.button2 {
+  background-color: #647198;
+  box-shadow: 0px -4px 0px 0px #414E73 inset;
+  color: white;
+}
+
+.button2:hover {
+  background-color: #A2B2E1;
+}
+
+.button3 {
+  background-color: #647198;
+  box-shadow: 0px -4px 0px 0px #414E73 inset;
+  color: white;
+}
+
+.button3:hover {
+  background-color: #A2B2E1;
+}
+
+.button4 {
+  background-color: #D03F2F;
+  box-shadow: 0px -4px 0px 0px #93261A inset;
+  color: white;
+}
+
+.button4:hover {
+  background-color: #F96B5B;
+}
