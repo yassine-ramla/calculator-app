@@ -2,7 +2,6 @@ body {
   background-color: #17062A;
 }
 
-/*header**************************************/
 .logo {
   color: #FFE53D;
 }
@@ -23,8 +22,6 @@ body {
   background-color: #00DED0;
 }
 
-/*result screen*/
-
 .result-screen {
   background-color: #1E0936;
 }
@@ -37,6 +34,7 @@ body {
 .buttons {
   background-color: #1E0936;
 }
+
 .button1 {
   background-color: #331C4D;
   box-shadow: 0px -4px 0px 0px #881C9E inset;
