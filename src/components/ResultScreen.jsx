@@ -1,17 +1,18 @@
 import PropTypes from "prop-types";
+import { formulateInput } from "../utils/helper";
 
-const ResultScreen = ({ result }) => {
+const InputScreen = ({ input }) => {
   return (
     <section className="result-screen">
       <p id="result" className="result">
-        {result ?? "3882910"}
+        {formulateInput(input)}
       </p>
     </section>
   );
 };
 
-ResultScreen.propTypes = {
-  result: PropTypes.number.isRequired,
+InputScreen.propTypes = {
+  input: PropTypes.string.isRequired,
 };
 
-export default ResultScreen;
+export default InputScreen;
