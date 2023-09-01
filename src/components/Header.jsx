@@ -1,15 +1,15 @@
 const Header = () => {
   function changeTheme1() {
     document.getElementById("switch-btn").style.left = "5px";
-    document.getElementById("theme").href = "./src/style/theme1.css";
+    document.querySelector("body").setAttribute("theme-data", "theme1");
   }
   function changeTheme2() {
     document.getElementById("switch-btn").style.left = "28px";
-    document.getElementById("theme").href = "./src/style/theme2.css";
+    document.querySelector("body").setAttribute("theme-data", "theme2");
   }
   function changeTheme3() {
     document.getElementById("switch-btn").style.left = "50px";
-    document.getElementById("theme").href = "./src/style/theme3.css";
+    document.querySelector("body").setAttribute("theme-data", "theme3");
   }
   return (
     <header>

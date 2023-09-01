@@ -1,3 +1,87 @@
+[theme-data="theme1"] {
+  --body-bg-color: #3A4663;
+  --logo-color: #FFF;
+  --h3-color: #FFF;
+  --numbers-color: #FFF;
+  --switch-bg-color: #242D44;
+  --swtich-btn-bg-color: #D03F2F;
+  --result-screen-bg-color: #181F33;
+  --result-color: #FFF;
+  --buttons-bg-color: #242D44;
+  --btn1-bg-color: #EAE3DC;
+  --btn1-shadow: 0px -4px 0px 0px #B3A497 inset;
+  --btn1-color: #434A59;
+  --btn1-bg-color-hover: #FFFFFE;
+  --btn2-bg-color: #647198;
+  --btn2-shadow: 0px -4px 0px 0px #414E73 inset;
+  --btn2-color: white;
+  --btn2-bg-color-hover: #A2B2E1;
+  --btn3-bg-color: #647198;
+  --btn3-shadow: 0px -4px 0px 0px #414E73 inset;
+  --btn3-color: white;
+  --btn3-bg-color-hover: #A2B2E1;
+  --btn4-bg-color: #D03F2F;
+  --btn4-shadow: 0px -4px 0px 0px #93261A inset;
+  --btn4-color: white;
+  --btn4-bg-color-hover: #F96B5B;
+}
+
+[theme-data="theme2"] {
+  --body-bg-color: #E6E6E6;
+  --logo-color: #36362C;
+  --h3-color: #36362C;
+  --numbers-color: #36362C;
+  --switch-bg-color: #D2CDCD;
+  --swtich-btn-bg-color: #C85402;
+  --result-screen-bg-color: #EEE;
+  --result-color: #36362C;
+  --buttons-bg-color: #D2CDCD;
+  --btn1-bg-color: #E5E4E1;
+  --btn1-shadow: 0px -4px 0px 0px #A79E91 inset;
+  --btn1-color: #36362C;
+  --btn1-bg-color-hover: #FFFFFE;
+  --btn2-bg-color: #378187;
+  --btn2-shadow: 0px -4px 0px 0px #1B6066 inset;
+  --btn2-color: white;
+  --btn2-bg-color-hover: #62B5BC;
+  --btn3-bg-color: #378187;
+  --btn3-shadow: 0px -4px 0px 0px #1B6066 inset;
+  --btn3-color: white;
+  --btn3-bg-color-hover: #62B5BC;
+  --btn4-bg-color: #C85402;
+  --btn4-shadow: 0px -4px 0px 0px #873901 inset;
+  --btn4-color: white;
+  --btn4-bg-color-hover: #FF8A38;
+}
+
+[theme-data="theme3"] {
+  --body-bg-color: #17062A;
+  --logo-color: #FFE53D;
+  --h3-color: #FFE53D;
+  --numbers-color: #FFE53D;
+  --switch-bg-color: #1E0936;
+  --swtich-btn-bg-color: #00DED0;
+  --result-screen-bg-color: #1E0936;
+  --result-color: #FFE53D;
+  --buttons-bg-color: #1E0936;
+  --btn1-bg-color: #331C4D;
+  --btn1-shadow: 0px -4px 0px 0px #881C9E inset;
+  --btn1-color: #FFE53D;
+  --btn1-bg-color-hover: #6C34AC;
+  --btn2-bg-color: #56077C;
+  --btn2-shadow: 0px -4px 0px 0px #BE15F4 inset;
+  --btn2-color: white;
+  --btn2-bg-color-hover: #8631AF;
+  --btn3-bg-color: #56077C;
+  --btn3-shadow: 0px -4px 0px 0px #BE15F4 inset;
+  --btn3-color: white;
+  --btn3-bg-color-hover: #8631AF;
+  --btn4-bg-color: #00DED0;
+  --btn4-shadow: 0px -4px 0px 0px #6CF9F1 inset;
+  --btn4-color: #1A2327;
+  --btn4-bg-color-hover: #93FFF8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +96,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--body-bg-color);
 }
 
 header {
@@ -28,6 +113,7 @@ header {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -0.533px;
+  color: var(--logo-color);
 }
 
 .theme {
@@ -43,6 +129,7 @@ header {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 5px;
+  color: var(--h3-color);
 }
 
 .theme-nmbrs {
@@ -57,6 +144,7 @@ header {
   text-align: center;
   font-size: 12px;
   font-weight: 700;
+  color: var(--numbers-color)
 }
 
 .switch-btn {
@@ -65,6 +153,7 @@ header {
   border-radius: 13px;
   display: flex;
   position: relative;
+  background-color: var(--switch-bg-color);
 }
 
 #switch-btn {
@@ -75,6 +164,7 @@ header {
   top: 5px;
   left: 5px;
   transition: 200ms;
+  background-color: var(--swtich-btn-bg-color);
 }
 
 .theme-aria {
@@ -91,6 +181,7 @@ header {
   margin-bottom: 24px;
   overflow-x: auto;
   direction: rtl;
+  background-color: var(--result-screen-bg-color);
 }
 
 .result {
@@ -100,6 +191,7 @@ header {
   letter-spacing: -0.667px;
   direction: ltr;
   padding: 0 19px;
+  color: var(--result-color);
 }
 
 .buttons {
@@ -111,6 +203,7 @@ header {
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
   gap: 13px;
+  background-color: var(--buttons-bg-color);
 }
 
 .button {
@@ -122,23 +215,51 @@ header {
 .button1 {
   font-size: 32px;
   padding: 13px 10px 11px;
+  background-color: var(--btn1-bg-color);
+  box-shadow: var(--btn1-shadow);
+  color: var(--btn1-color);
+}
+
+.button1:hover {
+  background-color: var(--btn1-bg-color-hover);
 }
 
 .button2 {
   font-size: 20px;
   padding: 12px 10px;
+  background-color: var(--btn2-bg-color);
+  box-shadow: var(--btn2-shadow);
+  color: var(--btn2-color);
+}
+
+.button2:hover {
+  background-color: var(--btn2-bg-color-hover);
 }
 
 .button3 {
   grid-column: span 2;
   font-size: 20px;
   padding: 12px 22px;
+  background-color: var(--btn3-bg-color);
+  box-shadow: var(--btn3-shadow);
+  color: var(--btn3-color);
+}
+
+.button3:hover {
+  background-color: var(--btn3-bg-color-hover);
 }
 
 .button4 {
   grid-column: span 2;
   font-size: 20px;
   padding: 12px 22px;
+  background-color: var(--btn4-bg-color);
+  box-shadow: var(--btn4-shadow);
+  color: var(--btn4-color);
+}
+
+.button4:hover {
+  background-color: var(--btn4-bg-color-hover);
 }
 
 .button p {
