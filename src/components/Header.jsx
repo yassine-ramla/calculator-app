@@ -1,3 +1,6 @@
+/* eslint-disable react-refresh/only-export-components */
+import { memo } from "react";
+
 const Header = () => {
   function changeTheme1() {
     document.getElementById("switch-btn").style.left = "5px";
@@ -11,6 +14,7 @@ const Header = () => {
     document.getElementById("switch-btn").style.left = "50px";
     document.querySelector("body").setAttribute("theme-data", "theme3");
   }
+  console.log("header rendered");
   return (
     <header>
       <h1 className="logo">calc</h1>
@@ -34,4 +38,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header);

@@ -26,7 +26,6 @@ export function evaluate(equation) {
         )).toString();
       }
     }
-    console.log(splitedEquation);
     for (let i = 1; i < splitedEquation.length; i = i + 2) {
       if (splitedEquation[i] === "x")
         splitedEquation.splice(
