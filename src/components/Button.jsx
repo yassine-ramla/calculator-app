@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 
 const Button = ({ content, className, updateInput }) => {
   className += " button";
-  console.log("button rendred");
   return (
     <button className={className} onClick={() => updateInput(content)}>
       <p>{content}</p>

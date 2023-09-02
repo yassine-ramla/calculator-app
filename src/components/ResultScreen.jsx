@@ -4,7 +4,6 @@ import { formulateInput } from "../utils/helper";
 import { memo } from "react";
 
 const InputScreen = ({ input }) => {
-  console.log("screen rendered");
   return (
     <section className="result-screen">
       <p id="result" className="result">

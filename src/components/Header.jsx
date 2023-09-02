@@ -5,16 +5,18 @@ const Header = () => {
   function changeTheme1() {
     document.getElementById("switch-btn").style.left = "5px";
     document.querySelector("body").setAttribute("theme-data", "theme1");
+    localStorage.setItem("theme", "theme1");
   }
   function changeTheme2() {
     document.getElementById("switch-btn").style.left = "28px";
     document.querySelector("body").setAttribute("theme-data", "theme2");
+    localStorage.setItem("theme", "theme2");
   }
   function changeTheme3() {
     document.getElementById("switch-btn").style.left = "50px";
     document.querySelector("body").setAttribute("theme-data", "theme3");
+    localStorage.setItem("theme", "theme3");
   }
-  console.log("header rendered");
   return (
     <header>
       <h1 className="logo">calc</h1>
